@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group form-title">
+            <h1 class="title">Student Enrollment Form</h1>
+        </div>
+        <div class="form-group form-instructions">
+            <h3>Instructions:</h3>
+            <p>1. Fill in the form fields.<br>2. Check your interests.<br>3. Click "Enroll Now" to submit.</p>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" class="form-control" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group radio-group">
+                <label for="sex">Sex:</label>
+                <label><input type="radio" name="sex" value="male" required> Male</label>
+                <label><input type="radio" name="sex" value="female"> Female</label>
+            </div>
+            <div class="form-group">
+                <label for="course">Course Options</label>
+                <select id="course" class="form-control" required>
+                    <option value="" disabled selected>Select your course</option>
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSSW">BSSW</option>
+                    <option value="BSPA">BSPA</option>
+                    <option value="ABELS">ABELS</option>
+                    <option value="DHRS">DHRS</option>
+                    <option value="BSE">BSE</option>
+                </select>
+            </div>
+            <div class="form-group checkbox-group">
+                <label for="interests">Interests:</label><br>
+                <label><input type="checkbox" name="interests" value="Web Development"> Web Development</label><br>
+                <label><input type="checkbox" name="interests" value="Data Science"> Data Science</label><br>
+                <label><input type="checkbox" name="interests" value="Networking"> Networking</label><br>
+                <label><input type="checkbox" name="interests" value="Graphic Design"> Graphic Design</label>
+            </div>
+            <input type="submit" class="btn" value="Enroll Now">
+        </form>
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ronjornok Gamborza</td>
+                <td>ronronpilay@example.com</td>
+                <td>21</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development, Data Science</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tom Delonge</td>
+                <td>aliensarereal@example.com</td>
+                <td>39</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Erwin Armovit</td>
+                <td>itserwin@gmail.com</td>
+                <td>28</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Networking</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>John Dinopol</td>
+                <td>johndino@gmail.com</td>
+                <td>34</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Gabby Alipe</td>
+                <td>gab14@gmail.com</td>
+                <td>35</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Data Science</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
